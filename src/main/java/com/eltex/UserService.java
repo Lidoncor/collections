@@ -34,7 +34,7 @@ public class UserService {
                 return user;
             }
         }
-        return null;
+        throw new NotFoundException();
     }
 
     public List<User> getAll() {
